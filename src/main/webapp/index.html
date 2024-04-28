@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Expense Tracker</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 100vw;
+                margin: 0;
+                padding: 0;
+                background-color: #212121;
+                color: #aaaaaa;
+            }
+
+            main {
+                text-align: center;
+            }
+
+            h1 {
+                margin: 0;
+                font-size: 3em;
+            }
+
+            .buttons {
+                margin-top: 20px;
+            }
+
+            .button {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #37c5b9;
+                color: #212121;
+                font-weight: bold;
+                text-decoration: none;
+                border-radius: 5px;
+                margin-right: 10px;
+            }
+
+            img {
+                margin-top: -100px;
+            }
+
+            footer {
+                text-align: center;
+            }
+
+            .headerImage {
+                max-width: 100vw;
+                height: 70vh;
+                justify-content: space-evenly;
+                display: flex;
+                flex-direction: row;
+            }
+
+            .header {
+                max-width: 72vw;
+                margin: 40px;
+                margin-left: 200px;
+            }
+            span {
+                font-weight: bold;
+                color: #37c5b9;
+            }
+
+            .feature {
+                background-color: #212121;
+                height: 25vh;
+                max-width: 40vw;
+                border: 2px solid #aaaaaa;
+                border-radius: 10px;
+                box-shadow: 10px 10px;
+            }
+
+            .feature h2 {
+                font-size: 28px;
+            }
+            .feature p {
+                margin: 20px;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <main>
+                <h1>Expense Tracker</h1>
+                <div class="header">
+                    <p style="font-size: 80px;"><span>Simple way</span> 
+                        <br>
+                        to manage <span >personal finances</span></p>
+                    <div class="buttons">
+                        <a href="register" class="button">Register</a>
+                        <a href="login" class="button">Login</a>
+                    </div>
+                </div>
+                <h2 style="font-size: 50px; margin: 100px 0 50px 0 ;">Features</h2>
+                <div class="headerImage" >
+                    <img src="images/image2.png" height="500px" alt="Dashboard Preview">
+                    <div class="feature" style="margin-top: 40px;">
+                        <h2>👉 Add user-defined categories for expenses</h2>
+                        <p>empower users to personalize their spending records, allowing them to categorize expenses according to their unique financial habits and priorities. </p>
+                    </div>
+
+                </div>
+                <div class="headerImage" >
+                    <div class="feature" style="margin-top: -40px;">
+                        <h2>👉 Track expenses by category</h2>
+                        <p>Efficiently manage your spending by categorizing expenses, allowing for clearer insight into where your money goes. </p>
+                    </div>
+                    <img src="images/image1.png" style="opacity: .5; border-radius: 10px;" height="300px" alt="Dashboard Preview">
+
+
+                </div>
+                <div class="headerImage" style="margin-top: -100px;" >
+                    <img src="images/image3.png" height="350px" alt="Dashboard Preview">
+                    <div class="feature" style="margin-top: -40px; padding-bottom:-200px;">
+                        <h2>👉 View graphical analysis of spending patterns</h2>
+                        <p>Experience the power of visual insights as you explore detailed graphs and charts, revealing your spending habits at a glance </p>
+                    </div>
+
+                </div>
+
+            </main>
+
+            <footer>
+                <p>&copy; 2024 Expense Tracker. All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.csp.expense.db.model">
+    <class name="User" table="users">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" />
+        </property>
+    </class>
+    <class name="Category" table="categories">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" />
+        </property>
+        <property name="userId" type="int">
+            <column name="userId" />
+        </property>
+    </class>
+    <class name="Expense" table="expenses">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="native" />
+        </id>
+        <property name="money" type="double">
+            <column name="money" />
+        </property>
+        <property name="date" type="date">
+            <column name="date" />
+        </property>
+        <property name="note" type="string">
+            <column name="note" />
+        </property>
+        <property name="userId" type="int">
+            <column name="userId" />
+        </property>
+        <property name="catId" type="int">
+            <column name="catId" />
+        </property>
+    </class>
+</hibernate-mapping>
